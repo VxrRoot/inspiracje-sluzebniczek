@@ -4,7 +4,7 @@ import HandsSvg from "../../public/hands.svg";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-cover text-black  bg-center bg-desktop-bg ">
+    <main className="flex min-h-screen flex-col items-center justify-center bg-cover text-black  bg-center bg-desktop-bg max-h-screen">
       <div className="tracking-wider flex flex-col gap-8 items-center">
         <Image
           src={HandsSvg}
