@@ -14,16 +14,18 @@ const DrawQuote: FC = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center flex-col h-screen gap-4 max-w-5xl px-6 mx-auto">
-      <p className="text-2xl text-center">{`"${Quotes[randomIndex].quote},,`}</p>
-      <p className="text-l italic">{`${Quotes[randomIndex].author}`}</p>
-      <button
-        className="px-4 py-2 border border-white hover:border-cyan-400 transition-colors mt-4"
-        onClick={drawQuote}
-      >
-        Losuj kolejny
-      </button>
-    </div>
+    <section className="bg-cover text-black  bg-center bg-mobile-bg md:bg-desktop-bg ">
+      <div className="flex justify-end pb-14 md:justify-center items-center flex-col h-screen gap-4 max-w-4xl px-6 mx-auto ">
+        <p className="text-2xl text-center">{`"${Quotes[randomIndex].quote},,`}</p>
+        <p className="text-l italic">{`${Quotes[randomIndex].author}`}</p>
+        <button
+          className="px-4 py-2 border border-black hover:border-cyan-400 transition-colors mt-4"
+          onClick={drawQuote}
+        >
+          Losuj kolejny
+        </button>
+      </div>
+    </section>
   );
 };
 
