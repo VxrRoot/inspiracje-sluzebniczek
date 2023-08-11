@@ -3,6 +3,8 @@ import Link from "next/link";
 import HandsSvg from "../../public/hands.svg";
 
 export default function Home() {
+  console.log("siema");
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-cover text-black  bg-center bg-desktop-bg max-h-screen">
       <div className="tracking-wider flex flex-col gap-8 items-center">
@@ -11,7 +13,7 @@ export default function Home() {
           alt="praying hands"
           width={150}
           height={150}
-          className="fill-black"
+          priority
         />
         <h1 className="text-center text-2xl uppercase">
           Inspiracje <br></br>
