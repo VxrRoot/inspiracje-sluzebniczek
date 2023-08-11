@@ -1,6 +1,5 @@
 import React, { FC, useEffect, useState } from "react";
 import { performRequest } from "../../../lib/datocms";
-import { Quotes } from "../../../data/Quotes";
 import QuoteContainer from "./components/QuoteContainer";
 
 const PAGE_QUOTES_QUERY = `
